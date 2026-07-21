@@ -62,6 +62,7 @@ html {
 }
 
 
+
 .gallery p {
     margin-bottom: 30px;
     color: var(--deep-green);
@@ -69,10 +70,11 @@ html {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* FIXED 2 per row */
     gap: 20px;
     padding: 20px;
 }
+
 
 .gallery-grid img {
     width: 100%;
