@@ -1,4 +1,6 @@
-/* Brand Colours */
+/* ============================
+   BRAND COLOURS
+   ============================ */
 :root {
     --deep-green: #0f1f17;
     --brass: #c6a667;
@@ -6,6 +8,9 @@
     --light-green: #1f3d31;
 }
 
+/* ============================
+   GLOBAL
+   ============================ */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -13,7 +18,13 @@ body {
     color: var(--white);
 }
 
-/* Navigation Bar */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ============================
+   NAVIGATION BAR
+   ============================ */
 .navbar {
     background: var(--deep-green);
     padding: 15px 20px;
@@ -35,7 +46,7 @@ body {
 }
 
 .navbar a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
@@ -45,11 +56,9 @@ body {
     color: var(--brass);
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-/* Gallery Page */
+/* ============================
+   GALLERY PAGE
+   ============================ */
 .gallery {
     text-align: center;
     padding: 40px 20px;
@@ -61,30 +70,27 @@ html {
     text-shadow: 0 0 4px rgba(0,0,0,0.4);
 }
 
-
-
-.gallery p {
+/* ⭐ THIS FIXES YOUR ISSUE — SUBTITLE NOW BRASS */
+.gallery > p {
     margin-bottom: 30px;
-    color: var(--deep-green);
+    color: var(--brass) !important;
+    text-shadow: 0 0 4px rgba(0,0,0,0.4);
 }
 
+/* Grid layout */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* FIXED 2 per row */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
 }
 
-
+/* Real images */
 .gallery-grid img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     border: 3px solid var(--brass);
-}
-
-
-.gallery-grid img {
     cursor: pointer;
     transition: 0.3s;
 }
@@ -93,6 +99,7 @@ html {
     transform: scale(1.03);
 }
 
+/* Empty placeholder slots */
 .empty-slot {
     width: 100%;
     aspect-ratio: 16/9;
@@ -101,8 +108,9 @@ html {
     background: rgba(255,255,255,0.05);
 }
 
-
-/* Lightbox */
+/* ============================
+   LIGHTBOX
+   ============================ */
 .lightbox {
     position: fixed;
     top: 0;
@@ -123,7 +131,9 @@ html {
     border-radius: 10px;
 }
 
-/* Split Preview Gallery Item */
+/* ============================
+   SPLIT PREVIEW (Before/After)
+   ============================ */
 .split-preview {
     position: relative;
     width: 100%;
@@ -145,7 +155,7 @@ html {
     top: 10px;
     padding: 5px 10px;
     background: rgba(0,0,0,0.6);
-    color: white;
+    color: var(--white);
     font-size: 0.9rem;
     border-radius: 5px;
 }
@@ -160,7 +170,9 @@ html {
     right: 10px;
 }
 
-/* Header / Hero */
+/* ============================
+   HERO SECTION
+   ============================ */
 .hero {
     text-align: center;
     padding: 60px 20px;
@@ -186,7 +198,9 @@ html {
     text-shadow: 0 0 4px rgba(0,0,0,0.4);
 }
 
-/* Contact Section (Home Page) */
+/* ============================
+   CONTACT SECTION (HOME)
+   ============================ */
 .contact {
     text-align: center;
     padding: 40px 20px;
@@ -211,14 +225,15 @@ html {
     text-shadow: 0 0 4px rgba(0,0,0,0.4);
 }
 
-/* Contact Page */
+/* ============================
+   CONTACT PAGE
+   ============================ */
 .contact-page {
     background: var(--light-green);
     padding: 40px 20px;
     text-align: center;
 }
 
-/* Brass heading + subtext with glow */
 .contact-page h1,
 .contact-page > p {
     color: var(--brass);
@@ -232,7 +247,7 @@ html {
 
 /* Contact Cards */
 .contact-card {
-    background: white;
+    background: var(--white);
     border: 3px solid var(--brass);
     border-radius: 10px;
     padding: 20px;
@@ -253,7 +268,9 @@ html {
     color: var(--deep-green);
 }
 
-/* Services Section */
+/* ============================
+   SERVICES PAGE
+   ============================ */
 .services {
     padding: 40px 20px;
     max-width: 900px;
@@ -284,7 +301,9 @@ html {
     text-shadow: 0 0 4px rgba(0,0,0,0.4);
 }
 
-/* Before & After Slider */
+/* ============================
+   BEFORE & AFTER SLIDER
+   ============================ */
 .before-after {
     text-align: center;
     padding: 40px 20px;
@@ -315,7 +334,9 @@ html {
     margin-top: 20px;
 }
 
-/* Footer */
+/* ============================
+   FOOTER
+   ============================ */
 .footer {
     text-align: center;
     padding: 20px;
