@@ -40,6 +40,23 @@ body {
     border-radius: 6px;
 }
 
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--light-green);
+    margin-top: 40px;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    color: var(--deep-green);
+}
+
 /* Services Section */
 .services {
     padding: 40px 20px;
