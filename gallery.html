@@ -9,6 +9,62 @@
 
 <body>
 
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h1>Gallery</h1>
+        <p>Before & After – Exterior + Interior</p>
+
+        <!-- 4‑Image Grid -->
+        <div class="gallery-grid">
+            <img src="images/before-exterior.jpg" alt="Before Exterior">
+            <img src="images/after-exterior.jpg" alt="After Exterior">
+            <img src="images/before-interior.jpg" alt="Before Interior">
+            <img src="images/after-interior.jpg" alt="After Interior">
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <img id="lightbox-img" src="">
+    </div>
+
+    <!-- Lightbox Script -->
+    <script>
+    document.querySelectorAll('.gallery-grid img').forEach(img => {
+        img.addEventListener('click', () => {
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox').style.display = 'flex';
+        });
+    });
+
+    document.getElementById('lightbox').addEventListener('click', () => {
+        document.getElementById('lightbox').style.display = 'none';
+    });
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlossGuard Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
     <nav class="navbar">
     <ul>
         <li><a href="index.html">Home</a></li>
