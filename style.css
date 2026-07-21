@@ -174,9 +174,11 @@ html {
     font-weight: bold;
 }
 
-.contact-page p {
+.contact-page h1,
+.contact-page > p {
     color: var(--brass);
 }
+
 
 /* Services Section */
 .services {
