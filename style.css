@@ -48,6 +48,10 @@ body {
     z-index: 1000;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* Header / Hero */
 .hero {
