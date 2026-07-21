@@ -167,6 +167,38 @@ html {
     font-weight: bold;
 }
 
+/* Before & After Slider */
+.before-after {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--light-green);
+}
+
+.ba-container {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.ba-img {
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.after {
+    clip-path: inset(0 50% 0 0);
+}
+
+.ba-slider {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
 /* Footer */
 .footer {
     text-align: center;
