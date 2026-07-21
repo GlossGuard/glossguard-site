@@ -79,6 +79,36 @@ html {
     border: 3px solid var(--brass);
 }
 
+.gallery-grid img {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* Lightbox */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 4px solid var(--brass);
+    border-radius: 10px;
+}
+
 /* Split Preview Gallery Item */
 .split-preview {
     position: relative;
