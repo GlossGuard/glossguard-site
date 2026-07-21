@@ -57,6 +57,11 @@ body {
     color: var(--deep-green);
 }
 
+.contact p {
+    color: white;
+}
+
+
 .contact-highlight {
     color: var(--brass);   /* same colour as your prices */
     font-weight: bold;
