@@ -14,114 +14,29 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#book">Book Now</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Gallery Section -->
     <section class="gallery">
         <h1>Gallery</h1>
-        <p>Before & After – Exterior + Interior</p>
+        <p>Some of our recent detailing work.</p>
 
-        <!-- 4‑Image Grid -->
         <div class="gallery-grid">
-            <img src="images/before-exterior.jpg" alt="Before Exterior">
-            <img src="images/after-exterior.jpg" alt="After Exterior">
-            <img src="images/before-interior.jpg" alt="Before Interior">
-            <img src="images/after-interior.jpg" alt="After Interior">
+            <img src="gallery1.jpg" alt="Detailing Photo 1">
+            <img src="gallery2.jpg" alt="Detailing Photo 2">
+            <img src="gallery3.jpg" alt="Detailing Photo 3">
+            <img src="gallery4.jpg" alt="Detailing Photo 4">
         </div>
     </section>
 
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox">
-        <img id="lightbox-img" src="">
-    </div>
-
-    <!-- Lightbox Script -->
-    <script>
-    document.querySelectorAll('.gallery-grid img').forEach(img => {
-        img.addEventListener('click', () => {
-            document.getElementById('lightbox-img').src = img.src;
-            document.getElementById('lightbox').style.display = 'flex';
-        });
-    });
-
-    document.getElementById('lightbox').addEventListener('click', () => {
-        document.getElementById('lightbox').style.display = 'none';
-    });
-    </script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlossGuard Gallery</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <nav class="navbar">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="#book">Book Now</a></li>
-        <li><a href="contact.html">Contact</a></li>
-
-    </ul>
-</nav>
-
-    <!-- Gallery Section -->
-<div class="gallery-grid">
-
-    <!-- Detailing Photo 1 (Split Preview) -->
-    <div class="gallery-item split-preview">
-        <img src="before.jpg" alt="Detailing Photo 1 - Before" class="before-img">
-        <img src="after.jpg" alt="Detailing Photo 1 - After" class="after-img">
-        <img src="exterior1.jpg" alt="Detailing Photo 1 - Before" class="before-img">
-        <img src="exterior2.jpg" alt="Detailing Photo 1 - After" class="after-img">
-    </div>
-
-    <!-- Your other gallery items stay the same -->
-    <img src="gallery3.jpg" alt="Detailing Photo 3">
-    <img src="gallery4.jpg" alt="Detailing Photo 4">
-
-</div>
-
-
-</div>
-
-    </section>
-
-<div class="lightbox" id="lightbox">
-    <img id="lightbox-img" src="">
-</div>
-
-
-    
     <!-- Footer -->
     <footer class="footer">
         <p>© 2026 GlossGuard Detailing — Professional Mobile Car Care, Fully insured</p>
     </footer>
-
-    <script>
-document.querySelectorAll('.gallery-grid img').forEach(img => {
-    img.addEventListener('click', () => {
-        document.getElementById('lightbox-img').src = img.src;
-        document.getElementById('lightbox').style.display = 'flex';
-    });
-});
-
-document.getElementById('lightbox').addEventListener('click', () => {
-    document.getElementById('lightbox').style.display = 'none';
-});
-</script>
-
 
 </body>
 </html>
