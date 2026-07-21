@@ -42,6 +42,13 @@ body {
     color: var(--brass);
 }
 
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
 /* Header / Hero */
 .hero {
     text-align: center;
