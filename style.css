@@ -98,6 +98,27 @@ html {
     object-fit: cover;
 }
 
+.split-preview::before,
+.split-preview::after {
+    position: absolute;
+    top: 10px;
+    padding: 5px 10px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+.split-preview::before {
+    content: "Before";
+    left: 10px;
+}
+
+.split-preview::after {
+    content: "After";
+    right: 10px;
+}
+
 
 /* Header / Hero */
 .hero {
