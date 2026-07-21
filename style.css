@@ -1,0 +1,74 @@
+/* Brand Colours */
+:root {
+    --deep-green: #0f1f17;
+    --brass: #c6a667;
+    --white: #ffffff;
+    --light-green: #1f3d31;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--deep-green);
+    color: var(--white);
+}
+
+/* Header / Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--light-green);
+}
+
+.logo {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: var(--brass);
+    color: var(--deep-green);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/* Services Section */
+.services {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--brass);
+}
+
+.service-card {
+    background: var(--light-green);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--brass);
+    border-radius: 6px;
+}
+
+.price {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: var(--brass);
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--light-green);
+    margin-top: 40px;
+}
