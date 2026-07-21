@@ -57,6 +57,12 @@ body {
     color: var(--deep-green);
 }
 
+.contact-highlight {
+    color: var(--brass);   /* same colour as your prices */
+    font-weight: bold;
+}
+
+
 /* Services Section */
 .services {
     padding: 40px 20px;
