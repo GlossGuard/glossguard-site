@@ -21,7 +21,7 @@ body {
 }
 
 .logo {
-    width: 280px;        /* desktop size */
+    width: 500px;        /* desktop size */
     max-width: 60%;      /* prevents it blowing up on mobile */
     display: block;      /* allows centering */
     margin: 0 auto;      /* centres the logo */
