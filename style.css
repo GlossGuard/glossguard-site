@@ -82,6 +82,22 @@ html {
     border: 3px solid var(--brass);
 }
 
+/* Split Preview Gallery Item */
+.split-preview {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 3px solid var(--brass);
+    display: flex;
+}
+
+.split-preview img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
 
 /* Header / Hero */
 .hero {
