@@ -1,13 +1,13 @@
 // Placeholder for future interactive features
 console.log("GlossGuard site loaded");
 
-// Before & After Slider
-const sliders = document.querySelectorAll('.ba-slider');
+// Gallery → open Before/After slider
+const galleryImages = document.querySelectorAll('.gallery-grid img');
+const sliderSection = document.querySelector('.before-after');
 
-sliders.forEach(slider => {
-    slider.addEventListener('input', (e) => {
-        const container = e.target.closest('.ba-container');
-        const afterImg = container.querySelector('.after');
-        afterImg.style.clipPath = `inset(0 ${100 - e.target.value}% 0 0)`;
+galleryImages.forEach(img => {
+    img.addEventListener('click', () => {
+        sliderSection.scrollIntoView({ behavior: "smooth" });
     });
 });
+;
