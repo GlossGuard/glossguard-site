@@ -151,10 +151,14 @@ html {
    ============================ */
 .services {
     padding: 40px 20px;
+    background: var(--light-green);
+}
+
+.services-inner {
     max-width: 900px;
     margin: auto;
-    background: var(--light-green); /* FIX */
 }
+
 
 .services h2 {
     text-align: center;
