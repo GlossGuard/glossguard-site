@@ -153,6 +153,7 @@ html {
     padding: 40px 20px;
     max-width: 900px;
     margin: auto;
+    background: var(--light-green); /* FIX */
 }
 
 .services h2 {
@@ -178,13 +179,6 @@ html {
     font-weight: bold;
     text-shadow: 0 0 4px rgba(0,0,0,0.4);
 }
-.services {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-    background: var(--light-green); /* FIX */
-}
-
 
 /* ============================
    CONTACT SECTION (HOME)
