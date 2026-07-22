@@ -135,6 +135,17 @@ html {
     background: rgba(255,255,255,0.05);
 }
 
+.gallery h2 {
+    color: var(--brass);
+    font-size: 1.8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
 /* ============================
    SERVICES PAGE
    ============================ */
