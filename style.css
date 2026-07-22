@@ -156,8 +156,9 @@ html {
 
 .services-inner {
     max-width: 900px;
-    margin: auto;
+    margin: 0 auto; /* THIS is what centres it */
 }
+
 
 
 .services h2 {
