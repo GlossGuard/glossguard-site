@@ -184,8 +184,10 @@ html {
     padding-bottom: 4px;
     display: inline-block; /* underline matches text width */
     border-bottom: 2px solid var(--brass);
-    opacity: 0;                 /* start invisible */
+    opacity: 0;
+    transform: translateY(10px); /* bigger movement so you SEE it */
     animation: fadeUnderline 0.8s ease forwards;
+    animation-delay: 0.2s; /* gives your eye time to notice it */
 }
 
 
