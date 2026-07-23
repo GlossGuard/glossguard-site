@@ -283,6 +283,7 @@ html {
     padding: 20px;
     background: var(--light-green);
     margin-top: 40px;
+    color: var(--brass); 
 }
 
 .footer-logo {
@@ -290,5 +291,8 @@ html {
     height: auto;
     display: block;
     margin: 0 auto 10px;
+    border: 2px solid var(--brass);   /* brass border */
+    border-radius: 6px;               /* optional: smooth corners */
+    padding: 4px;                     /* optional: breathing room */
 }
 
