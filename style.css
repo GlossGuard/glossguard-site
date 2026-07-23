@@ -46,14 +46,14 @@ html {
 }
 
 .navbar a {
-    color: var(--white);
+    color: var(--brass);
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
 }
 
 .navbar a:hover {
-    color: var(--brass);
+    color: var(--white);
 }
 
 /* ============================
