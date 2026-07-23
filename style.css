@@ -182,9 +182,12 @@ html {
     font-style: italic;
     margin-bottom: 8px;
     padding-bottom: 4px;
+    display: inline-block; /* underline matches text width */
     border-bottom: 2px solid var(--brass);
-    display: inline-block; /* makes underline match text width */
+    opacity: 0;                 /* start invisible */
+    animation: fadeUnderline 0.8s ease forwards;
 }
+
 
 
 /* Prices */
@@ -284,6 +287,17 @@ html {
     font-family: "Playfair Display", serif; /* luxury but readable */
     line-height: 1.6;
     text-align: center;
+}
+
+@keyframes fadeUnderline {
+    0% {
+        opacity: 0;
+        transform: translateY(4px); /* slight lift for premium feel */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
