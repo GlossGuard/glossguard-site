@@ -177,14 +177,15 @@ html {
     color: var(--brass); /* all writing brass */
 }
 
-/* Service titles */
 .service-card h3 {
     color: var(--brass);
-    font-style: italic; /* slight italic */
+    font-style: italic;
     margin-bottom: 8px;
     padding-bottom: 4px;
-    border-bottom: 2px solid var(--brass); /* brass underline */
+    border-bottom: 2px solid var(--brass);
+    display: inline-block; /* makes underline match text width */
 }
+
 
 /* Prices */
 .price {
