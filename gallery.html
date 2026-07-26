@@ -81,3 +81,30 @@
 
 </body>
 </html>
+<script>
+    // Get elements
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".lightbox .close");
+
+    // Add click event to all gallery images
+    document.querySelectorAll(".gallery-grid img").forEach(img => {
+        img.addEventListener("click", () => {
+            lightbox.style.display = "block";
+            lightboxImg.src = img.src;
+        });
+    });
+
+    // Close lightbox
+    closeBtn.onclick = () => {
+        lightbox.style.display = "none";
+    };
+
+    // Close when clicking outside the image
+    lightbox.onclick = (e) => {
+        if (e.target === lightbox) {
+            lightbox.style.display = "none";
+        }
+    };
+</script>
+
