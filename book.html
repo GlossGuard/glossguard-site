@@ -24,21 +24,20 @@
         <p>Premium mobile detailing across Gloucestershire & Herefordshire.</p>
     </section>
 
-
     <section class="booking-form-container">
-        <form class="booking-form">
+        <form id="bookingForm" class="booking-form">
 
             <label>Name</label>
-            <input type="text" required>
+            <input type="text" name="name" required>
 
             <label>Email</label>
-            <input type="email" required>
+            <input type="email" name="email" required>
 
             <label>Phone Number</label>
-            <input type="tel" required>
+            <input type="tel" name="phone" required>
 
             <label>Vehicle Type</label>
-            <select required>
+            <select name="vehicle" required>
                 <option value="">Select</option>
                 <option>Hatchback</option>
                 <option>SUV</option>
@@ -47,7 +46,7 @@
             </select>
 
             <label>Service</label>
-            <select required>
+            <select name="service" required>
                 <option value="">Select</option>
                 <option>Mini Valet</option>
                 <option>Full Valet</option>
@@ -56,14 +55,15 @@
             </select>
 
             <label>Preferred Date</label>
-            <input type="date" required>
+            <input type="date" name="date" required>
 
             <label>Additional Notes</label>
-            <textarea rows="4"></textarea>
+            <textarea name="notes" rows="4"></textarea>
 
             <button type="submit" class="submit-btn">Confirm Booking</button>
         </form>
     </section>
+
 <script>
     const dateInput = document.querySelector('input[type="date"]');
 
@@ -90,6 +90,34 @@
             alert("Weekdays are fully booked. Please select a weekend or bank holiday.");
             this.value = "";
         }
+    });
+</script>
+
+<script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+<script>
+    (function() {
+        emailjs.init("d7Mnq2jQH9Rw0VDrx");
+    })();
+
+    document.getElementById("bookingForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        emailjs.send("service_agfqrgg", "template_mdcx348", {
+            name: this.querySelector('input[name="name"]').value,
+            email: this.querySelector('input[name="email"]').value,
+            phone: this.querySelector('input[name="phone"]').value,
+            vehicle: this.querySelector('select[name="vehicle"]').value,
+            service: this.querySelector('select[name="service"]').value,
+            date: this.querySelector('input[name="date"]').value,
+            notes: this.querySelector('textarea[name="notes"]').value
+        })
+        .then(() => {
+            alert("Booking request sent successfully! We will contact you shortly to confirm the booking");
+            this.reset();
+        }, (error) => {
+            alert("Failed to send booking. Please try again.");
+            console.error(error);
+        });
     });
 </script>
 
