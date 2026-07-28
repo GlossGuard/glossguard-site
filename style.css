@@ -56,6 +56,17 @@ html {
     color: var(--white);
 }
 
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999999; /* force navbar above everything */
+}
+
+.services {
+    position: relative;
+    z-index: 1; /* keep it below navbar */
+}
+
 /* ============================
    HERO SECTION (HOME)
    ============================ */
