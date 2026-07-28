@@ -94,31 +94,36 @@
 </script>
 
 <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
-<script>
-    (function() {
-        emailjs.init("d7Mnq2jQH9Rw0VDrx");
-    })();
 
-    document.getElementById("bookingForm").addEventListener("submit", function(e) {
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    emailjs.init("d7Mnq2jQH9Rw0VDrx");
+
+    const form = document.getElementById("bookingForm");
+
+    form.addEventListener("submit", function(e) {
         e.preventDefault();
 
         emailjs.send("service_agfqrgg", "template_mdcx348", {
-            name: this.querySelector('input[name="name"]').value,
-            email: this.querySelector('input[name="email"]').value,
-            phone: this.querySelector('input[name="phone"]').value,
-            vehicle: this.querySelector('select[name="vehicle"]').value,
-            service: this.querySelector('select[name="service"]').value,
-            date: this.querySelector('input[name="date"]').value,
-            notes: this.querySelector('textarea[name="notes"]').value
+            name: form.querySelector('input[name="name"]').value,
+            email: form.querySelector('input[name="email"]').value,
+            phone: form.querySelector('input[name="phone"]').value,
+            vehicle: form.querySelector('select[name="vehicle"]').value,
+            service: form.querySelector('select[name="service"]').value,
+            date: form.querySelector('input[name="date"]').value,
+            notes: form.querySelector('textarea[name="notes"]').value
         })
         .then(() => {
             alert("Booking request sent successfully! We will contact you shortly to confirm the booking");
-            this.reset();
+            form.reset();
         }, (error) => {
             alert("Failed to send booking. Please try again.");
             console.error(error);
         });
     });
+
+});
 </script>
 
 </body>
