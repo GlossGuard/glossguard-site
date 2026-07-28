@@ -401,6 +401,23 @@ html {
     background: #F5D98A;
 }
 
+.lightbox {
+    display: none;          /* hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 9999;          /* sits ABOVE navbar when active */
+    pointer-events: none;   /* <-- THIS is the fix */
+}
+
+.lightbox.active {
+    display: flex;
+    pointer-events: auto;   /* allow clicking only when open */
+}
+
 
 /* ============================
    FOOTER
