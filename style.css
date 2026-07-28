@@ -335,6 +335,61 @@ html {
     }
 }
 
+.booking-page {
+    background-color: #0F1A18;
+    color: #D4AF37;
+    font-family: 'Inter', sans-serif;
+    padding: 40px;
+}
+
+.booking-header h1 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.booking-form-container {
+    background: #1A2F2A;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.booking-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: none;
+    background: #25433D;
+    color: #D4AF37;
+}
+
+.submit-btn {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    background: #D4AF37;
+    color: #0F1A18;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #F5D98A;
+}
+
+
 /* ============================
    FOOTER
    ============================ */
