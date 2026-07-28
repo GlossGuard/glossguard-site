@@ -64,6 +64,34 @@
             <button type="submit" class="submit-btn">Confirm Booking</button>
         </form>
     </section>
+<script>
+    const dateInput = document.querySelector('input[type="date"]');
+
+    const bankHolidays = [
+        "2026-01-01",
+        "2026-04-03",
+        "2026-04-06",
+        "2026-05-04",
+        "2026-05-25",
+        "2026-08-31",
+        "2026-12-25",
+        "2026-12-28"
+    ];
+
+    dateInput.addEventListener('input', function () {
+        const selected = this.value;
+        const date = new Date(selected);
+        const day = date.getDay(); // 0 = Sun, 6 = Sat
+
+        const isWeekend = (day === 0 || day === 6);
+        const isBankHoliday = bankHolidays.includes(selected);
+
+        if (!isWeekend && !isBankHoliday) {
+            alert("Weekdays are fully booked. Please select a weekend or bank holiday.");
+            this.value = "";
+        }
+    });
+</script>
 
 </body>
 </html>
