@@ -4,26 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Title -->
     <title>Car Detailing Gallery | GlossGuard Detailing</title>
 
-    <!-- SEO Description -->
     <meta name="description" content="GlossGuard Detailing gallery showcasing before & after results from interior and exterior car detailing across Gloucestershire and Herefordshire.">
 
-    <!-- OpenGraph (Social Sharing) -->
+    <link rel="canonical" href="https://glossguarddetailing.co.uk/gallery.html">
+
     <meta property="og:title" content="GlossGuard Detailing – Gallery">
     <meta property="og:description" content="Before & after results from professional car detailing and valeting services across Gloucestershire & Herefordshire.">
     <meta property="og:url" content="https://glossguarddetailing.co.uk/gallery.html">
     <meta property="og:type" content="website">
-
-    <title>GlossGuard Detailing – Gallery</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-   <nav class="navbar">
+<nav class="navbar">
     <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
@@ -33,75 +30,73 @@
     </ul>
 </nav>
 
-    <!-- Gallery Section 1 -->
-    <section class="gallery">
-        <h1>Gallery</h1>
-        <h2>Mitsubishi ASX</h2>
-        <p>Before & After – Interior & Exterior</p>
+<section class="gallery">
+    <h1>Car Detailing Gallery</h1>
+    <p>Real results from mobile detailing across Forest of Dean, Gloucestershire, Herefordshire, Ross-on-Wye and Monmouth.</p>
 
-        <div class="gallery-grid">
-            <img src="before.jpg" alt="Before Interior">
-            <img src="after.jpg" alt="After Interior">
-            <img src="exterior1.jpg" alt="Before Exterior">
-            <img src="exterior2.jpg" alt="After Exterior">
-        </div>
-    </section>
+    <!-- Mitsubishi ASX -->
+    <h2>Mitsubishi ASX – Interior & Exterior</h2>
+    <p>Before & After</p>
 
-    <!-- Gallery Section 2 -->
-    <section class="gallery">
-        <h1>Audi Q3</h1>
-        <p>Before & After – Interior & Exterior</p>
+    <div class="gallery-grid">
+        <img src="before.jpg" alt="Mitsubishi ASX interior before detailing">
+        <img src="after.jpg" alt="Mitsubishi ASX interior after detailing">
+        <img src="exterior1.jpg" alt="Mitsubishi ASX exterior before wash">
+        <img src="exterior2.jpg" alt="Mitsubishi ASX exterior after wash">
+    </div>
 
-        <div class="gallery-grid">
-            <img src="audi1.jpeg" alt="Before Interior">
-            <img src="audi2.jpeg" alt="After Interior">
-            <img src="audi3.jpeg" alt="Foamed Exterior">
-            <img src="audi4.jpeg" alt="After Exterior">
-        </div>
-    </section>
+    <!-- Audi Q3 -->
+    <h2>Audi Q3 – Interior & Exterior</h2>
+    <p>Before & After</p>
 
-    <!-- Gallery Section 3 -->
-    <section class="gallery">
-        <h1>VW Tiguan</h1>
-        <p>Before & After – Interior Detail</p>
+    <div class="gallery-grid">
+        <img src="audi1.jpeg" alt="Audi Q3 interior before deep clean">
+        <img src="audi2.jpeg" alt="Audi Q3 interior after deep clean">
+        <img src="audi3.jpeg" alt="Audi Q3 exterior snow foam stage">
+        <img src="audi4.jpeg" alt="Audi Q3 exterior after detailing">
+    </div>
 
-        <div class="gallery-grid">
-            <img src="boot1.jpg" alt="Before Boot Interior">
-            <img src="boot2.jpg" alt="After Boot Interior">
-            <img src="front1.jpg" alt="Before Front Interior">
-            <img src="front2.jpg" alt="After Front Interior">
-        </div>
-    </section>
+    <!-- VW Tiguan -->
+    <h2>VW Tiguan – Interior Detail</h2>
+    <p>Before & After</p>
 
-    <!-- Gallery Section 4 -->
-    <section class="gallery">
-        <h1>Honda HRV</h1>
-        <p>Before & After – Interior & Exterior</p>
+    <div class="gallery-grid">
+        <img src="boot1.jpg" alt="VW Tiguan boot interior before cleaning">
+        <img src="boot2.jpg" alt="VW Tiguan boot interior after cleaning">
+        <img src="front1.jpg" alt="VW Tiguan front interior before cleaning">
+        <img src="front2.jpg" alt="VW Tiguan front interior after cleaning">
+    </div>
 
-        <div class="gallery-grid">
-            <img src="HRV3.jpg" alt="Placeholder Image">
-            <img src="HRV4.jpg" alt="Placeholder Image">
-            <img src="HRV1.jpg" alt="Placeholder Image">
-            <img src="HRV2.jpg" alt="Placeholder Image">
-        </div>
-    </section>
+    <!-- Honda HRV -->
+    <h2>Honda HRV – Interior & Exterior</h2>
+    <p>Before & After</p>
 
-<!-- Image Lightbox -->
+    <div class="gallery-grid">
+        <img src="HRV3.jpg" alt="Honda HRV detailing work">
+        <img src="HRV4.jpg" alt="Honda HRV detailing work">
+        <img src="HRV1.jpg" alt="Honda HRV interior before cleaning">
+        <img src="HRV2.jpg" alt="Honda HRV interior after cleaning">
+    </div>
+</section>
+
+<!-- Lightbox -->
 <div id="lightbox" class="lightbox">
     <span class="close">&times;</span>
     <img class="lightbox-img" id="lightbox-img">
 </div>
 
-</body>
-</html>
+<footer class="footer">
+    <p><strong>GlossGuard Detailing</strong><br>
+    📍 Forest of Dean, Gloucestershire<br>
+    📞 07932 985913<br>
+    📧 glossguard.detailing@outlook.com</p>
+</footer>
 
 <script>
-    // Get elements
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightbox-img");
     const closeBtn = document.querySelector(".lightbox .close");
 
-    // Add click event to all gallery images
     document.querySelectorAll(".gallery-grid img").forEach(img => {
         img.addEventListener("click", () => {
             lightbox.style.display = "block";
@@ -109,15 +104,16 @@
         });
     });
 
-    // Close lightbox
     closeBtn.onclick = () => {
         lightbox.style.display = "none";
     };
 
-    // Close when clicking outside the image
     lightbox.onclick = (e) => {
         if (e.target === lightbox) {
             lightbox.style.display = "none";
         }
     };
 </script>
+
+</body>
+</html>
