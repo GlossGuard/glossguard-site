@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Title -->
     <title>Book a Car Valet or Detail | GlossGuard Detailing</title>
 
-    <!-- SEO Description -->
     <meta name="description" content="Book your mobile car valeting or detailing appointment with GlossGuard Detailing. Serving Gloucestershire and Herefordshire with premium interior and exterior detailing services.">
 
-    <!-- OpenGraph (Social Sharing) -->
+    <link rel="canonical" href="https://glossguarddetailing.co.uk/book.html">
+
     <meta property="og:title" content="Book Your Detailing Appointment – GlossGuard">
     <meta property="og:description" content="Schedule your mobile car detailing or valeting appointment with GlossGuard Detailing. Covering Gloucestershire & Herefordshire.">
     <meta property="og:url" content="https://glossguarddetailing.co.uk/book.html">
@@ -21,60 +20,68 @@
 
 <body class="booking-page">
 
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a class="book-now-btn" href="book.html">Book Now</a></li>
-        </ul>
-    </nav>
+<nav class="navbar">
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="book-now-btn" href="book.html">Book Now</a></li>
+    </ul>
+</nav>
 
-    <section class="booking-header">
-        <h1>Book Your Detailing Appointment</h1>
-        <p>Premium mobile detailing across Gloucestershire & Herefordshire.</p>
-    </section>
+<section class="booking-header">
+    <h1>Book Your Detailing Appointment</h1>
+    <p>Premium mobile detailing across Gloucestershire & Herefordshire.</p>
+    <p>Serving Forest of Dean, Ross-on-Wye, Monmouth and surrounding areas — ideal for anyone searching for <strong>“mobile car detailing near me”</strong>.</p>
+</section>
 
-    <section class="booking-form-container">
-        <form id="bookingForm" class="booking-form">
+<section class="booking-form-container">
+    <form id="bookingForm" class="booking-form">
 
-            <label>Name</label>
-            <input type="text" name="name" required>
+        <label>Name</label>
+        <input type="text" name="name" required>
 
-            <label>Email</label>
-            <input type="email" name="email" required>
+        <label>Email</label>
+        <input type="email" name="email" required>
 
-            <label>Phone Number</label>
-            <input type="tel" name="phone" required>
+        <label>Phone Number</label>
+        <input type="tel" name="phone" required>
 
-            <label>Vehicle Type</label>
-            <select name="vehicle" required>
-                <option value="">Select</option>
-                <option>Hatchback</option>
-                <option>SUV</option>
-                <option>Estate</option>
-                <option>Luxury / Performance</option>
-            </select>
+        <label>Vehicle Type</label>
+        <select name="vehicle" required>
+            <option value="">Select</option>
+            <option>Hatchback</option>
+            <option>SUV</option>
+            <option>Estate</option>
+            <option>Luxury / Performance</option>
+        </select>
 
-            <label>Service</label>
-            <select name="service" required>
-                <option value="">Select</option>
-                <option>Mini Valet</option>
-                <option>Full Valet</option>
-                <option>Interior Deep Clean</option>
-                <option>Exterior Deep Clean</option>
-            </select>
+        <label>Service</label>
+        <select name="service" required>
+            <option value="">Select</option>
+            <option>Mini Valet</option>
+            <option>Full Valet</option>
+            <option>Interior Deep Clean</option>
+            <option>Exterior Deep Clean</option>
+        </select>
 
-            <label>Preferred Date</label>
-            <input type="date" name="date" required>
+        <label>Preferred Date</label>
+        <input type="date" name="date" required>
 
-            <label>Additional Notes</label>
-            <textarea name="notes" rows="4"></textarea>
+        <label>Additional Notes</label>
+        <textarea name="notes" rows="4"></textarea>
 
-            <button type="submit" class="submit-btn">Confirm Booking</button>
-        </form>
-    </section>
+        <button type="submit" class="submit-btn">Confirm Booking</button>
+    </form>
+</section>
+
+<footer class="footer">
+    <p><strong>GlossGuard Detailing</strong><br>
+    📍 Forest of Dean, Gloucestershire<br>
+    📞 07932 985913<br>
+    📧 glossguard.detailing@outlook.com</p>
+</footer>
 
 <script>
     const dateInput = document.querySelector('input[type="date"]');
@@ -93,7 +100,7 @@
     dateInput.addEventListener('input', function () {
         const selected = this.value;
         const date = new Date(selected);
-        const day = date.getDay(); // 0 = Sun, 6 = Sat
+        const day = date.getDay();
 
         const isWeekend = (day === 0 || day === 6);
         const isBankHoliday = bankHolidays.includes(selected);
