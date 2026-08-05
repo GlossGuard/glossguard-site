@@ -391,7 +391,7 @@ html {
 
 .booking-page {
     background-color: #1f3d31; /* your light green */
-    color: #D4AF37;
+    color: var(--brass);
     font-family: 'Inter', sans-serif;
     padding: 40px;
 }
@@ -429,14 +429,14 @@ html {
     border-radius: 6px;
     border: none;
     background: #25433D;
-    color: #D4AF37;
+    color: var(--brass);
 }
 
 .submit-btn {
     margin-top: 25px;
     width: 100%;
     padding: 12px;
-    background: #D4AF37;
+    background: var(--brass);
     color: #0F1A18;
     font-weight: 700;
     border-radius: 6px;
@@ -445,8 +445,9 @@ html {
 }
 
 .submit-btn:hover {
-    background: #F5D98A;
+    background: #d8c48a;
 }
+
 
 .lightbox {
     display: none;          /* hidden by default */
@@ -485,5 +486,22 @@ html {
     border: 2px solid var(--brass);   /* brass border */
     border-radius: 6px;               /* optional: smooth corners */
     padding: 4px;                     /* optional: breathing room */
+}
+@media (max-width: 600px) {
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 10px 0;
+    }
+
+    .navbar li {
+        margin: 0;
+    }
+
+    .navbar a {
+        font-size: 1.1rem;
+        padding: 6px 0;
+    }
 }
 
