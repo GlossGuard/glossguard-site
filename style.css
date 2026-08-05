@@ -487,21 +487,5 @@ html {
     border-radius: 6px;               /* optional: smooth corners */
     padding: 4px;                     /* optional: breathing room */
 }
-@media (max-width: 600px) {
-    .navbar ul {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        padding: 10px 0;
-    }
 
-    .navbar li {
-        margin: 0;
-    }
-
-    .navbar a {
-        font-size: 1.1rem;
-        padding: 6px 0;
-    }
-}
 
