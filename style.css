@@ -203,9 +203,26 @@ html {
     background: var(--light-green);
 }
 
+/* Services page title */
+.services h1 {
+    color: var(--brass);
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 4px rgba(0,0,0,0.4);
+}
+
+
 .services-inner {
     max-width: 900px;
     margin: 0 auto;
+}
+
+/* Services page subtitle */
+.service-area {
+    color: var(--brass);
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 4px rgba(0,0,0,0.4);
 }
 
 /* Page title */
@@ -225,6 +242,18 @@ html {
     border-radius: 6px;
     color: var(--brass); /* all writing brass */
 }
+
+/* All links inside the services section */
+.services a {
+    color: var(--brass);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.services a:hover {
+    color: var(--white);
+}
+
 
 .service-card h3 {
     color: var(--brass);
